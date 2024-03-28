@@ -1,0 +1,161 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    border-bottom: 1px solid #555;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+nav ul li a::before {
+    content: '';
+    position: absolute;
+    bottom: -2px; /* Adjust as needed */
+    left: 0;
+    width: 100%;
+    height: 2px; /* Adjust thickness as needed */
+    background-color: rgba(255, 255, 255, 0); /* Adjust color and opacity as needed */
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover::before {
+    background-color: rgba(255, 255, 255, 1); /* Adjust color and opacity as needed */
+}
+
+section {
+    padding: 20px 0;
+}
+
+section h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+section p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.postcards-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.postcard-group {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.postcard {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: calc(50% - 20px);
+    margin: 20px;
+    transition: box-shadow 0.3s ease;
+}
+
+.postcard h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.postcard p {
+    margin-bottom: 10px;
+}
+
+.postcard:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (max-width: 768px) {
+    .postcard {
+        width: 100%;
+    }
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 50px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+
+.skills-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.skill-block {
+    width: calc(33.33% - 10px); /* Adjust as needed */
+    margin-bottom: 20px;
+}
+
+
+.skill {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.rating {
+    display: flex;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    background-color: #333;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.dot.empty {
+    background-color: #ccc;
+}
