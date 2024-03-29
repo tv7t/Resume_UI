@@ -4,6 +4,7 @@ body {
     padding: 0;
     background-color: #f7f7f7;
     color: #333;
+    overflow-x: hidden;
 }
 
 .container {
@@ -45,16 +46,16 @@ nav ul li a {
 nav ul li a::before {
     content: '';
     position: absolute;
-    bottom: -2px; /* Adjust as needed */
+    bottom: -2px;
     left: 0;
     width: 100%;
-    height: 2px; /* Adjust thickness as needed */
-    background-color: rgba(255, 255, 255, 0); /* Adjust color and opacity as needed */
+    height: 2px;
+    background-color: rgba(255, 255, 255, 0);
     transition: background-color 0.3s ease;
 }
 
 nav ul li a:hover::before {
-    background-color: rgba(255, 255, 255, 1); /* Adjust color and opacity as needed */
+    background-color: rgba(255, 255, 255, 1);
 }
 
 section {
@@ -78,10 +79,10 @@ section p {
     justify-content: space-between;
 }
 
-.postcard-group {
-    width: 100%;
+.postcard-row {
     display: flex;
-    justify-content: space-between;
+    width: 100%;
+    margin: 0 -10px;
 }
 
 .postcard {
@@ -103,14 +104,47 @@ section p {
     margin-bottom: 10px;
 }
 
-.postcard:hover {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+@media screen and (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    header {
+        padding: 20px 0;
+    }
+
+    nav ul {
+        text-align: center;
+    }
+
+    nav ul li {
+        display: inline-block;
+        margin: 10px;
+    }
+
+    .postcard-row {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -10px;
+    }
+
+    .postcard {
+        width: calc(100% - 20px);
+        margin: 0 10px 20px;
+    }
+
+    header h1 {
+        text-align: center;
+    }
+
+    section h2 {
+        text-align: center;
+    }
 }
 
-@media screen and (max-width: 768px) {
-    .postcard {
-        width: 100%;
-    }
+.postcard:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 footer {
@@ -126,7 +160,6 @@ footer p {
     font-size: 14px;
 }
 
-
 .skills-wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -134,10 +167,9 @@ footer p {
 }
 
 .skill-block {
-    width: calc(33.33% - 10px); /* Adjust as needed */
+    width: calc(33.33% - 10px);
     margin-bottom: 20px;
 }
-
 
 .skill {
     font-weight: bold;
