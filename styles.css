@@ -16,6 +16,7 @@ header {
     color: #fff;
     padding: 20px 0;
     border-bottom: 1px solid #555;
+    width: 100%;
 }
 
 header h1 {
@@ -155,6 +156,7 @@ footer {
     padding: 20px 0;
     text-align: center;
     margin-top: 50px;
+    width: 100%;
 }
 
 footer p {
