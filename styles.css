@@ -134,7 +134,7 @@ section p {
     .postcard {
         width: calc(100% - 20px);
         margin: 0 10px 20px;
-        margin-left: 20px;
+        margin-left: 25px;
     }
 
     header h1 {
