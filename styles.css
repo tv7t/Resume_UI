@@ -106,8 +106,8 @@ section p {
 
 @media screen and (max-width: 768px) {
     .container {
-        width: 90%;
-/*         margin: 0 auto; */
+        width: 95%;
+        margin: 0 auto;
     }
 
     header {
