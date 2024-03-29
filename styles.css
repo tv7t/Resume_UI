@@ -4,6 +4,7 @@ body {
     padding: 0;
     background-color: #f7f7f7;
     color: #333;
+    
 }
 
 .container {
@@ -16,7 +17,6 @@ header {
     color: #fff;
     padding: 20px 0;
     border-bottom: 1px solid #555;
-    width: 100%;
 }
 
 header h1 {
@@ -108,7 +108,7 @@ section p {
     .container {
         width: 100%;
         padding: 0 10px;
-        margin-left: 10px;
+        padding-left: 10px;
     }
 
     header {
@@ -156,7 +156,6 @@ footer {
     padding: 20px 0;
     text-align: center;
     margin-top: 50px;
-    width: 100%;
 }
 
 footer p {
