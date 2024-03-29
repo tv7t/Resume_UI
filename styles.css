@@ -4,7 +4,6 @@ body {
     padding: 0;
     background-color: #f7f7f7;
     color: #333;
-    overflow-x: hidden;
 }
 
 .container {
@@ -107,7 +106,7 @@ section p {
 @media screen and (max-width: 768px) {
     .container {
         width: 100%;
-        padding: 0 0;
+        padding: 0 20px;
     }
 
     header {
