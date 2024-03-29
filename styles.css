@@ -107,6 +107,7 @@ section p {
     .container {
         width: 100%;
         padding: 0 20px;
+        margin-left: 10px;
     }
 
     header {
