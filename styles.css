@@ -106,9 +106,8 @@ section p {
 
 @media screen and (max-width: 768px) {
     .container {
-        width: 100%;
-        padding: 0 10px;
-        padding-left: 10px;
+        width: 90%;
+        padding: 0 20px;
     }
 
     header {
